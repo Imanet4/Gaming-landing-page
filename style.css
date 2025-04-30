@@ -1,16 +1,19 @@
+
 *{
-    margin: 0 auto;
     max-width: 1200px;
-}
-
-body{
-
     margin: 0 auto;
 }
+
+/*NAVIGATION BAR - CHECK HOVER ON BUTTON CHANGE*/
 .navbar {
     background-color: rgba(16,14,22,255) !important;
     width: 100%;
   }  
+
+  .navigation-items{
+    gap: 40px;
+  }
+  
 
   .nav-link, .navbar-nav .nav-link {
     color: #fff !important;
@@ -21,8 +24,8 @@ body{
     color: #e0e0e0 !important;
   }
   .btn-install {
-    background: linear-gradient(to right, rgb(246, 55, 93), rgb(192, 87, 185));
-    border: none;
+    background: linear-gradient(to right, rgb(192, 87, 185), rgb(246, 55, 93));
+    border: 1px solid red;
     color: #fff !important;
     font-weight: bold;
     padding: 10px 32px;
@@ -46,20 +49,21 @@ body{
     color: #ff2d55;
   } 
 
+  /*HERO SECTION*/
 
- /* Hero Section */
 .hero-section{
-    background-image: url(/images/bg-image.png);
+    margin-top: 5%;
+    background-image: url(/images/banner_bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 70vh;
     width: 100%;
-    }
+    min-height: 80vh;
+}
 
 .hero-content {
-    text-align: left !important;
-    }
+   text-align: left !important;
+}
 
 .hero-title {
     font-size: 3.5rem;
@@ -67,18 +71,16 @@ body{
     margin-bottom: 30px; 
     line-height: 1.1;
     color: white;
-    }
+}
 
 .hero-text {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 30px;
-    width: 600px;
+    max-width: 40%;
     color: white;
     text-align: left;
-    }
-
-/* Button Styles */
+}
 
 .watch-btn {
     background: linear-gradient(to right, #ff0037, #e6007e);
@@ -91,48 +93,48 @@ body{
     transition: all 0.3s ease;
     display: inline-block;
     text-decoration: none;
-    }
+}
 
 .watch-btn:hover {
     opacity: 0.9;
     color: white;
-    }
+}
 
 
 /*Partners Section*/
 
-.partner-logo{
+/* .partners-logo{
     height: 50px;
-    object-fit: contain;
-    }
+} */
 
-/*History Section*/
-.container{
+
+/*About Us*/
+
+
+.history-section{
     display: flex;
     margin-top: 20%;
-}
-.history-section{
     width: 100%;
+    gap: 10px;
 }
 
 .history-section h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     color: white;
 }
 
 .history-section p {
     color: #dadada;
-    margin-bottom: 2rem;
-    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
     line-height: 1.6;
 }
 
-.history-image img {
-    max-width: 80%;
-    
+.history-image{
+    max-width: 90%;
 }
+
 
 
 .btn-install {
@@ -178,7 +180,11 @@ body{
     text-decoration: none;
 }
 
-/*LIVESTREAM SECTION*/
+
+
+
+
+/* Live Steams Section */
 
 .livestream-section {
     position: relative;
@@ -252,8 +258,8 @@ body{
 }
 
 .image-wrapper {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -291,138 +297,262 @@ body{
 }
 
 
-/*Latest war Fight*/
 
+/* Latest War Fight Section */
 
-.main-title {
+.war {
     text-align: center;
-    padding: 20px 0;
-    font-size: 2.2rem;
+    font-size: 3em;
     font-weight: bold;
     color: white;
-}
-
-.top-image-container {
-    position: relative;
-    margin-bottom: 15px;
-    height: 350px;
-    /* background-color: #1a1a2e; */
-    overflow: hidden;
-}
-
-.bottom-container {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.challenges-section {
-    width: 50%;
-    padding-right: 7.5px;
-}
-
-.featured-image-section {
-    width: 50%;
-    padding-left: 7.5px;
-    position: relative;
-    height: 320px;
-    background-color: #1a1a2e;
-}
-
-.challenge-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    padding: 8px;
-    background-color: #1c1c2e;
-}
-
-.team-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    background-color: #333;
-    border-radius: 5px;
-}
-
-.versus-text {
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.challenge-info {
-    margin-left: auto;
-    text-align: right;
-}
-
-.challenge-date {
-    color: #ff6b6b;
-    font-size: 0.9rem;
-}
-
-.challenge-title {
-    font-weight: bold;
-}
-
-.overlay-text {
-    color: white;
-    position: absolute;
-    top: 20px;
-    left: 0;
+  }
+  
+  .war-bg-img {
+    background-image: url(/images/latest_war_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 35em;
+  }
+  
+  .text-content {
+    justify-self: center;
     text-align: center;
-    z-index: 2;
-    align-self: center;
-}
-.overlay-text a{
-    text-decoration: none;
+    color: white;
+  }
+  .text-content .logo {
+    margin-top: 130px;
+  }
+  .text-content .title {
+    font-size: 2.1em;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .text-content .date {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .text-content a {
     color: red;
-
-}
-
-.featured-title {
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.featured-date {
-    line-height: 2em;
-    font-size: 1rem ;
-}
-
-.featured-label {
-    display: inline-block;
-    background-color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .latest-score{
+    font-size: 2.9em;
     color: white;
-    padding: 3px 10px;
-    border-radius: 3px;
-    margin-top: 5px;
-    font-size: 0.8rem;
-}
-
-.match-info {
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-}
-
-.team-vs-container {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+  }
+  .latest-score p {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  
+  /*WAR SECTION BOTTOM PART*/
+  .upcoming-wars {
     display: flex;
     justify-content: center;
+    gap: 50px;
     align-items: center;
+    color: white;
+    margin-top: 140px;
+    font-weight: bold;
+  }
+  
+  .upcoming-matchs {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-weight: bold;
+  }
+  .upcoming-matchs-text {
+    font-weight: bold;
+  }
+  
+
+  #dates {
+    color: rgb(237, 28, 77);
+  }
+  
+  .right-side {
+    background-image: url(/images/latest_war_img_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 29em;
+    width: 30em;
+    text-align: center;
+    align-content: center;
+  }
+  .text-content-one {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  .text-content-two {
+    font-weight: 600;
+  }
+  .right-side a{
+    text-decoration: none;
+    color: red;
+    margin-top: 0;
+  }
+  .team-match {
+    display: flex;
+    justify-content: center;
+  }
+  .team-match p {
+    font-size: 1.9em;
+    font-weight: bold;
+  }
+
+  /*All Fighters Section*/
+
+  .fighter {
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    font-size: 2.7em;
+    font-weight: bold;
+  }
+  
+  .image-collection{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .far-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+  .far-right {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  /*Footer Section*/
+
+  .footer {
+    /* background-color: #0a0a14; */
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-desc {
+    color: #b0b0b0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-right: 40px;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #b0b0b0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.newsletter-form {
     margin-top: 10px;
 }
 
-.team-logo-large {
-    width: 70px;
-    height: 70px;
-    background-color: #333;
-    border-radius: 5px;
+.newsletter-form .input-group {
+    margin-top: 15px;
 }
 
-.vs-text-large {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0 15px;
+.newsletter-form input {
+    background-color: #1a1a2e;
+    border: none;
+    color: #fff;
+    padding: 12px 15px;
+}
+
+.newsletter-form input:focus {
+    box-shadow: none;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.newsletter-form button {
+    background-color: #ff0044;
+    border: none;
+    padding: 12px 15px;
+}
+
+.newsletter-form button:hover {
+    background-color: #e6003c;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1a1a2e;
+    padding-top: 25px;
+    margin-top: 40px;
+    text-align: left;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    color: #b0b0b0;
+    margin-left: 15px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
 }
