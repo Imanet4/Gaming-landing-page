@@ -1,49 +1,60 @@
 
 *{
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 /*NAVIGATION BAR - CHECK HOVER ON BUTTON CHANGE*/
 .navbar {
-    background-color: rgba(16,14,22,255) !important;
-    width: 100%;
-  }  
+  background-color: rgba(16,14,22,255) !important;
+  width: 100%;
+}  
 
-  .navigation-items{
-    gap: 40px;
-  }
+.navigation-items{
+  gap: 40px;
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+}
   
 
-  .nav-link, .navbar-nav .nav-link {
-    color: #fff !important;
-    font-weight: 500;
-    margin-right: 12px;
-  }
-  .nav-link:hover, .navbar-nav .nav-link.active {
-    color: #e0e0e0 !important;
-  }
-  .btn-install {
-    background: linear-gradient(to right, rgb(192, 87, 185), rgb(246, 55, 93));
-    border: 1px solid red;
-    color: #fff !important;
-    font-weight: bold;
-    padding: 10px 32px;
-    border-radius: 4px;
-    font-size: 1.15rem;
-    background-position: 0% 50%;
-    transition: background-position 1s ease;
-  }
-  .btn-install:hover {
-    background: linear-gradient(to right,rgb(192, 87, 185), rgb(246, 55, 93)  );
-    color: #fff !important;
-  }
-  .dropdown-menu {
-    background: #23202a;
-  }
-  .dropdown-item {
-    color: #fff;
-  }
+.nav-link, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.nav-link:hover, .navbar-nav .nav-link.active {
+  color: #e0e0e0 !important;
+}
+
+.btn-install {
+  
+  background: linear-gradient(to right, rgb(192, 87, 185), rgb(246, 55, 93));
+  color: #fff !important;
+  font-weight: bold;
+  padding: 10px 32px;
+  font-size: 1.15rem;
+  background-position: 0% 50%;
+  transition: background-position 1s ease;
+  
+}
+
+.btn-install:hover {
+  background: linear-gradient(to right,rgb(192, 87, 185), rgb(246, 55, 93));
+  color: #fff !important;
+}
+
+.dropdown-menu {
+  background: #23202a;
+}
+.dropdown-item {
+  color: #fff;
+}
   .dropdown-item:hover {
     background: #2e2b36;
     color: #ff2d55;
@@ -71,15 +82,17 @@
     margin-bottom: 30px; 
     line-height: 1.1;
     color: white;
+    font-family: 'Aclonica';
 }
 
 .hero-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 40%;
-    color: white;
-    text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 40%;
+  color: white;
+  margin: 30px 0;
+  /* text-align: left; */
 }
 
 .watch-btn {
@@ -89,10 +102,11 @@
     border: none;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     display: inline-block;
     text-decoration: none;
+    font-family: 'Aclonica';
 }
 
 .watch-btn:hover {
@@ -122,6 +136,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
+    font-family: 'Aclonica';
 }
 
 .history-section p {
@@ -149,6 +164,7 @@
     margin-bottom: 10px;
     display: inline-block;
     text-decoration: none;
+    font-family: 'Aclonica';
 }
 
 .btn-tutorial {
@@ -162,6 +178,7 @@
     margin-bottom: 10px;
     display: inline-block;
     text-decoration: none;
+    font-family: 'Aclonica';
 }
 
 .btn-install:hover {
@@ -224,10 +241,12 @@
     font-weight: bold;
     line-height: 0.9;
     margin-bottom: 30px;
+    
 }
 
 .brand-text span {
     display: block;
+    font-family: 'Aclonica';
 }
 
 .brand-text span:first-child {
@@ -237,11 +256,13 @@
 .install-btn {
     background: linear-gradient(to right, #ff0844, #ffb199);
     border: none;
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     transition: all 0.3s ease;
+    font-family: 'Aclonica';
+    font-size: 70%;
 }
 
 .install-btn:hover {
@@ -306,6 +327,10 @@
     font-weight: bold;
     color: white;
   }
+
+.war-title{
+  font-family: 'Aclonica';
+}
   
   .war-bg-img {
     background-image: url(/images/latest_war_img.png);
@@ -327,15 +352,18 @@
     font-size: 2.1em;
     font-weight: bold;
     margin-bottom: 0;
+    font-family: 'Aclonica';
   }
   .text-content .date {
     font-size: 1.4em;
     font-weight: bold;
+    font-family: 'Aclonica';
   }
   .text-content a {
     color: red;
     text-decoration: none;
     font-weight: 500;
+    font-family: 'Aclonica';
   }
   
   .latest-score{
@@ -348,6 +376,8 @@
   .latest-score p {
     margin-top: 25px;
     font-weight: bold;
+    font-family: 'Aclonica';
+    font-size: 60%;
   }
   
   /*WAR SECTION BOTTOM PART*/
@@ -367,13 +397,23 @@
     align-items: center;
     font-weight: bold;
   }
+
+  .upcoming-matchs p{
+    font-family: 'Aclonica';
+  }
+
   .upcoming-matchs-text {
     font-weight: bold;
+  }
+
+  .upcoming-matchs-text p{
+    font-family: 'Aclonica';
   }
   
 
   #dates {
     color: rgb(237, 28, 77);
+    font-family: 'Aclonica';
   }
   
   .right-side {
@@ -390,14 +430,17 @@
     font-size: 2em;
     font-weight: bold;
     margin: 0;
+    font-family: 'Aclonica';
   }
   .text-content-two {
     font-weight: 600;
+    font-family: 'Aclonica';
   }
   .right-side a{
     text-decoration: none;
     color: red;
     margin-top: 0;
+    font-family: 'Aclonica';
   }
   .team-match {
     display: flex;
@@ -406,6 +449,7 @@
   .team-match p {
     font-size: 1.9em;
     font-weight: bold;
+    font-family: 'Aclonica';
   }
 
   /*All Fighters Section*/
@@ -416,7 +460,10 @@
     margin-top: 120px;
     margin-bottom: 100px;
     font-size: 2.7em;
-    font-weight: bold;
+   
+  }
+  .fighter-title{
+    font-family: 'Aclonica';
   }
   
   .image-collection{
@@ -452,6 +499,9 @@
 
 .footer-logo {
     margin-bottom: 20px;
+}
+.footer-titles{
+  font-family: 'Aclonica';
 }
 
 .footer-logo img {
@@ -555,4 +605,12 @@
 
 .social-icons a:hover {
     color: #fff;
+}
+
+/*RESPONSIVE*/
+@media (man-width: 1000px) {
+  .partner-logo{
+    flex-wrap: wrap;
+  }
+  
 }
