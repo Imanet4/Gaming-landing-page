@@ -127,9 +127,12 @@
 
 .history-section{
     display: flex;
-    margin-top: 20%;
+    align-items: center;
     width: 100%;
-    gap: 10px;
+    /* gap: 10px; */
+}
+.history-content{
+  flex: 1;
 }
 
 .history-section h1 {
@@ -137,6 +140,7 @@
     font-weight: bold;
     color: white;
     font-family: 'Aclonica';
+    display: inline-block;
 }
 
 .history-section p {
@@ -144,10 +148,13 @@
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
     line-height: 1.6;
+    max-width: 50%;
+    margin: 20px 0;
 }
 
 .history-image{
-    max-width: 90%;
+  flex: 1;
+  max-width: 90%;
 }
 
 
@@ -319,6 +326,7 @@
 
 
 
+
 /* Latest War Fight Section */
 
 .war {
@@ -332,30 +340,41 @@
   font-family: 'Aclonica';
 }
   
-  .war-bg-img {
-    background-image: url(/images/latest_war_img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 35em;
-  }
+.war-bg-img {
+  background-image: url(/images/latest_war_img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35em;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   
-  .text-content {
-    justify-self: center;
-    text-align: center;
-    color: white;
-  }
+.text-content {
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
   .text-content .logo {
-    margin-top: 130px;
+    width: 80px;
+    height: auto;
+    max-width: 100%;
   }
+
   .text-content .title {
-    font-size: 2.1em;
+    font-size: clamp(1.5em, 5vw, 2.1em);
     font-weight: bold;
     margin-bottom: 0;
     font-family: 'Aclonica';
   }
+
   .text-content .date {
-    font-size: 1.4em;
+    font-size: clamp(1em, 3vw, 1.4em);
     font-weight: bold;
     font-family: 'Aclonica';
   }
@@ -364,130 +383,173 @@
     text-decoration: none;
     font-weight: 500;
     font-family: 'Aclonica';
+    font-size: clamp(0.9em, 3vw, 1.1em)
   }
   
   .latest-score{
-    font-size: 2.9em;
+    font-size: clamp(1.5em, 5vw, 2.9em);
     color: white;
-    justify-self: center;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
   }
+
+  .latest-score img {
+    height: auto;
+    max-height: 100px;
+    width: auto;
+    max-width: 100px;
+}
+
   .latest-score p {
-    margin-top: 25px;
+    margin-top: 10px 0;
     font-weight: bold;
     font-family: 'Aclonica';
-    font-size: 60%;
   }
+
   
-  /*WAR SECTION BOTTOM PART*/
+  /*Upcoming wars section*/
+
   .upcoming-wars {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     color: white;
-    margin-top: 140px;
+    margin-top: 80px;
     font-weight: bold;
+    flex-wrap: wrap;
+    padding: 0 20px;
   }
-  
+
+  .left-side {
+    flex: 1;
+    min-width: 300px; /* Min-width before wrapping */
+    max-width: 100%; /* to avoid any type of overflow */
+}
+
   .upcoming-matchs {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
     font-weight: bold;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 
-  .upcoming-matchs p{
+  .upcoming-matchs img {
+    width: 45px;
+    height: 50px;
+    max-width: 100%; 
+}
+
+.upcoming-matchs p,
+.upcoming-matchs-text p {
     font-family: 'Aclonica';
-  }
-
-  .upcoming-matchs-text {
-    font-weight: bold;
-  }
-
-  .upcoming-matchs-text p{
-    font-family: 'Aclonica';
-  }
+    font-size: clamp(0.9em, 2vw, 1em); /* Responsive font size */
+    margin: 5px 0;
+}
   
 
-  #dates {
+#dates {
     color: rgb(237, 28, 77);
     font-family: 'Aclonica';
   }
   
-  .right-side {
+.right-side {
     background-image: url(/images/latest_war_img_1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 29em;
-    width: 30em;
+    width: 100%;
+    max-width: 30em;
     text-align: center;
-    align-content: center;
-  }
-  .text-content-one {
-    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.right-side img {
+  width: 70px;
+  height: auto; 
+  max-width: 100%; 
+}
+
+.text-content-one {
+    font-size: clamp(1.5em, 4vw, 2em);
     font-weight: bold;
-    margin: 0;
+    margin: 10px 0;
     font-family: 'Aclonica';
-  }
+}
   .text-content-two {
     font-weight: 600;
     font-family: 'Aclonica';
-  }
-  .right-side a{
+    font-size: clamp(1em, 3vw, 1.2em);
+    margin: 10px 0;
+}
+
+.right-side a{
     text-decoration: none;
     color: red;
-    margin-top: 0;
+    margin: 10px 0;
     font-family: 'Aclonica';
-  }
-  .team-match {
+    font-size: clamp(0.9em, 3vw, 1.1em);
+}
+
+.team-match {
     display: flex;
     justify-content: center;
-  }
-  .team-match p {
-    font-size: 1.9em;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.team-match p {
+    font-size: clamp(1.2em, 4vw, 1.9em);;
     font-weight: bold;
     font-family: 'Aclonica';
-  }
+    margin: 10px 0;
+}
+
+.team-match img {
+  height: 75px;
+  width: auto; 
+  max-height: 100px; 
+  max-width: 100px; 
+}
 
   /*All Fighters Section*/
 
-  .fighter {
-    text-align: center;
-    color: white;
-    margin-top: 120px;
-    margin-bottom: 100px;
-    font-size: 2.7em;
-   
-  }
   .fighter-title{
     font-family: 'Aclonica';
-  }
+    color: white;
+    font-size: clamp(1.9em, 8vw, 2.7em);
+    text-align: center;
+}
+
+.image-collection{
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+}
   
-  .image-collection{
-    display: flex;
-    justify-content: center;
-    
-  }
-  .far-left {
+
+  .far-left, .middle, .far-right {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+
+    margin: 0;
     
   }
-  .middle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    
-  }
-  .far-right {
-    display: flex;
-    flex-direction: column;
-    
-  }
+ 
 
   /*Footer Section*/
 
@@ -608,9 +670,232 @@
 }
 
 /*RESPONSIVE*/
-@media (man-width: 1000px) {
-  .partner-logo{
-    flex-wrap: wrap;
+
+/*Laptop/Smaller desktop*/
+
+@media (max-width: 991px) {
+  .history-section {
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+  .history-content{
+    justify-items: center;
+    width: 100%;
+}
+
+  .btn-container {
+    display:flex;
+    justify-content: center;
+}
+  
+  .history-content h1 {
+      font-size: 2rem;
+}
+  
+  .history-content p {
+      font-size: 1rem;
+  }
+
+  /*Livestream Responsive*/
+
+  .livestream-container .row {
+    flex-direction: column;
+}
+
+.live-top {
+    order: 1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.live-bottom {
+    order: 2;
+}
+
+.brand-text span {
+    font-size: 3rem;
+}
+
+.images-container {
+    height: 300px;
+    margin-top: 5%;
+}
+
+/*All fights responsive*/
+.image-collection {
+  flex-wrap: wrap;
+  max-width: 620px; /* Matches middle-down width */
+  margin: 0 auto;
+  gap: 10px;
+}
+
+/* First row: left-top + right-top */
+.far-left, .far-right {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.left-top, .right-top {
+  width: calc(50% - 5px); /* Accounts for 10px gap */
+  max-width: 300px;
+  height: auto;
+}
+
+/* Second row: gallery_item_2 + gallery_item_3 */
+.middle-up {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.middle-up img {
+  width: calc(50% - 5px); /* Equal width, side-by-side */
+  max-width: 300px;
+  height: auto;
+}
+
+/* Third row: middle-down (full width) */
+.middle-down {
+  width: 100%;
+  max-width: 620px;
+}
+
+/* Fourth row: left-down + right-down */
+.left-down, .right-down {
+  width: calc(50% - 5px);
+  max-width: 300px;
+  height: auto;
+}
+}
+
+
+
+/*Tablet size responsive*/
+
+@media (max-width: 767px) {
+ 
+  .history-content{
+    justify-items: center;
+    width: 90%;
   }
   
+  .history-content h1 {
+      font-size: 1.8rem;
+  }
+
+  .btn-container {
+    display:flex;
+    justify-content: center;
+  }
+  
+  .btn-install, .btn-tutorial {
+      padding: 10px 20px;
+  }
+  .history-image img{
+    width: 80%;
+  }
+
+  /*LiveStream respnsive*/
+
+  .brand-text span {
+    font-size: 3rem;
+}
+
+.images-container {
+    height: 250px;
+}
+
+/*UPCOMING WARS RESPONSIVE*/
+.war-bg-img {
+  height: 25em; 
+}
+
+.upcoming-wars {
+  flex-direction: column; 
+}
+
+.right-side {
+  height: 25em; 
+}
+
+/*All fight responsive tablet and bellow*/
+
+.image-collection,
+    .far-left, .middle, .far-right,
+    .middle-up {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .left-top, .left-down,
+    .right-top, .right-down,
+    .middle-up img, .middle-down {
+      width: 100%;
+      max-width: 400px;
+    }
+
+
+}
+
+
+/*Phone size Responsive*/
+
+@media (max-width: 480px) {
+
+  .history-content h1 {
+      font-size: 1.5rem;
+  }
+
+  .history-content{
+    justify-items: center;
+    width: 100%;
+  }
+  
+  .history-content p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .history-image img{
+    width: 80%;
+  }
+
+  /*Livestream responsive*/
+
+  .brand-text span {
+    font-size: 2.2rem;
+}
+
+.install-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+.images-container {
+    height: 200px;
+}
+
+/* Upcoming war responsive*/
+.war-bg-img {
+  height: 20em; 
+}
+
+.right-side {
+  height: 20em; 
+}
+
+.latest-score img {
+  max-height: 80px; 
+  max-width: 80px;
+}
+
+.team-match img {
+  max-height: 60px; 
+  max-width: 60px;
+}
+
 }
