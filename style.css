@@ -14,7 +14,7 @@
 }  
 
 .navigation-items{
-  gap: 40px;
+  gap: 50px;
 }
 
 .navbar-toggler-icon{
@@ -25,7 +25,7 @@
 .nav-link, .navbar-nav .nav-link {
   color: #fff !important;
   font-weight: 500;
-  margin-right: 12px;
+  /* margin-right: 12px; */
 }
 
 .nav-link:hover, .navbar-nav .nav-link.active {
@@ -33,20 +33,21 @@
 }
 
 .btn-install {
-  
-  background: linear-gradient(to right, rgb(192, 87, 185), rgb(246, 55, 93));
+  position: relative;
+  font-family: 'Aclonica';
+  background: linear-gradient(90deg, #ff0000 0%, #c6019a 50%, #ff0000 100%);
+  background-size: 200% 100%;
   color: #fff !important;
-  font-weight: bold;
+  cursor: pointer;
   padding: 10px 32px;
   font-size: 1.15rem;
-  background-position: 0% 50%;
-  transition: background-position 1s ease;
+  transition: all 0.5s ease;
   
 }
 
 .btn-install:hover {
-  background: linear-gradient(to right,rgb(192, 87, 185), rgb(246, 55, 93));
-  color: #fff !important;
+  background-position: 100% 0;
+  
 }
 
 .dropdown-menu {
@@ -64,7 +65,7 @@
 
 .hero-section{
     margin-top: 5%;
-    background-image: url(/images/banner_bg.png);
+    background-image: url(/Gaming-landing-page/images/banner_bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,30 +97,34 @@
 }
 
 .watch-btn {
-    background: linear-gradient(to right, #ff0037, #e6007e);
+  position: relative;
+    background: linear-gradient(90deg, #ff0000 0%, #c6019a 50%, #ff0000 100%);
     color: white;
     padding: 12px 30px;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     font-size: 1rem;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     display: inline-block;
     text-decoration: none;
     font-family: 'Aclonica';
+    background-size: 200% 100%;
+    overflow: hidden;
 }
 
 .watch-btn:hover {
     opacity: 0.9;
+    background-position: 100% 0;
     color: white;
 }
 
 
 /*Partners Section*/
 
-/* .partners-logo{
+.partners-logo{
     height: 50px;
-} */
+}
 
 
 /*About Us*/
@@ -129,7 +134,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    /* gap: 10px; */
 }
 .history-content{
   flex: 1;
@@ -254,14 +258,14 @@
 .brand-text span {
     display: block;
     font-family: 'Aclonica';
+    color: white;
 }
 
-.brand-text span:first-child {
-    color: #ff6b6b;
-}
 
 .install-btn {
-    background: linear-gradient(to right, #ff0844, #ffb199);
+   position: relative;
+    background: linear-gradient(90deg, #ff0000 0%, #c6019a 50%, #ff0000 100%);
+    background-size: 200% 100%;
     border: none;
     padding: 20px 30px;
     border-radius: 5px;
@@ -269,12 +273,11 @@
     font-weight: bold;
     transition: all 0.3s ease;
     font-family: 'Aclonica';
-    font-size: 70%;
+    font-size: 90%;
 }
 
 .install-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255, 8, 68, 0.3);
+    background-position: 100% 0;
 }
 
 .images-container {
@@ -341,7 +344,7 @@
 }
   
 .war-bg-img {
-  background-image: url(/images/latest_war_img.png);
+  background-image: url(/Gaming-landing-page/images/latest_war_img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
